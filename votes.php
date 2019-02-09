@@ -47,6 +47,11 @@ if ($statement->execute()) {
 }
 $conn->close();
 
+if (isset($_GET['raw'])) {
+    var_dump([$votes, $user_vote]);
+    exit;
+}
+
 header('Content-Type: image/png');
 
 if ($user_vote === null) {
