@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
 if (!isset($_GET['page_id']) || !isset($_GET['user_uid']) || !isset($_GET['option_key'])) {
     http_response_code(400);
     exit;
