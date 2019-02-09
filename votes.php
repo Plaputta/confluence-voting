@@ -7,7 +7,6 @@ if (!isset($_GET['page_id']) || !isset($_GET['user_uid']) || !isset($_GET['optio
     exit;
 }
 
-$db = substr($url["path"], 1);
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $server = $url["host"];
 $username = $url["user"];
